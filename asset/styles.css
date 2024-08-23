@@ -253,9 +253,21 @@ main {
     border-radius: 5px;
 }
 
+.bio-image{
+    margin: 0 auto;
+}
+
 .bio-header-image {
     width: 100px;
     height: 100px;
-
+margin: 0px 50px;
     box-shadow: 3px 3px 45px rgba(221, 0, 255, 0.357);
+}
+.bio-p {
+    border: 2px solid aliceblue; border-radius: 5px;
+    padding: 25px;
+}
+
+p{
+    text-align: justify;
 }
