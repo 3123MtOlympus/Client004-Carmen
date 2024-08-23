@@ -17,12 +17,12 @@
     <!-- Navbar -->
     <nav>
         <ul>
-            <li><a href="/Client004-Carmen/index.html">Home</a></li>
-            <li><a href="/Client004-Carmen/bio.html">Bio</a></li>
-            <li><a href="/Client004-Carmen/photo.html">Photo Gallery</a></li>
-            <li><a href="/Client004-Carmen/credits.html">Credits</a></li>
-            <li><a href="/Client004-Carmen/booking.html">Booking</a></li>
-            <li><a href="/Client004-Carmen/contact.html">Contact</a></li>
+            <a href="/Client004-Carmen/index.html">Home</a>
+            <a href="/Client004-Carmen/bio.html">Bio</a>
+            <a href="/Client004-Carmen/photo.html">Photo Gallery</a>
+            <a href="/Client004-Carmen/credits.html">Credits</a>
+            <a href="/Client004-Carmen/booking.html">Booking</a>
+            <a href="/Client004-Carmen/contact.html">Contact</a>
         </ul>
     </nav>
 
@@ -34,6 +34,12 @@
             <div class="carousel-item video-card">
                 <video controls poster="/Client004-Carmen/asset/images/friends.png" class="vid">
                     <source src="https://www.youtube.com/watch?v=XNXIZuIBJKs" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="carousel-item video-card">
+                <video controls poster="/Client004-Carmen/asset/images/bb4l.png" class="vid">
+                    <source src="https://www.youtube.com/watch?v=kz0akPjtVhQ" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -106,12 +112,15 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
+           
 
             <!-- Add more video cards as needed -->
         </div>
     </section>
 
-    <hr class="hr">
+    <hr class="gradient-divider">
+
+    <!-- Credit Buttons -->
 
     <section id="credit" style="padding: 40px; background-color: #e9e9e9;">
         <h2 class="credit-title"> ...more credits</h2>
@@ -120,41 +129,61 @@
 
             <!-- TV -->
             <div class="carousel-item image-card">
-                <img src="asset/images/tv.png" class="img">
+
+                <a href="#tv">
+                    <img src="asset/images/tv.png" class="img">
+                </a>
 
             </div>
 
             <!-- Film -->
             <div class="carousel-item image-card">
-                <img src="asset/images/films.png" class="img">
+                <a href="#film">
+                    <img src="asset/images/films.png" class="img">
+                </a>
 
             </div>
 
             <!-- Animated TV -->
             <div class="carousel-item image-card">
-                <img src="asset/images/antv.png" class="img">
+                <a href="#animate-tv">
+                    <img src="asset/images/antv.png" class="img">
+                </a>
+
 
             </div>
 
             <!-- Animated Film -->
             <div class="carousel-item image-card">
-                <img src="asset/images/anf.png" class="img">
+                <a href="#animated_film">
+                    <img src="asset/images/anf.png" class="img">
+                </a>
+
 
             </div>
 
             <!-- Commercial -->
             <div class="carousel-item image-card">
-                <img src="asset/images/comtp.png" class="img">
+                <a href="#commercials">
+                    <img src="asset/images/comtp.png" class="img">
+                </a>
+
             </div>
 
             <!-- Artist Work -->
             <div class="carousel-item image-card">
-                <img src="asset/images/arwork.png" class="img">
+                <a href="#artist">
+                    <img src="asset/images/arwork.png" class="img">
+                </a>
+
             </div>
 
             <!-- Tributes -->
             <div class="carousel-item image-card">
-                <img src="asset/images/tributes.png" class="img">
+                <a href="#tributes">
+                    <img src="asset/images/tributes.png" class="img">
+                </a>
+
             </div>
 
             <!-- Add more image cards as needed -->
@@ -162,89 +191,334 @@
     </section>
 
     <hr class="gradient-divider">
-      
+
+
+
     <div class="imdb-button-container">
         <a href="https://www.imdb.com/name/nm0141512/" target="_blank" class="imdb-button">View on IMDb</a>
     </div>
-    
-    <!-- <section id="credit-list" style="padding: 40px; background-color: #e9e9e9;">
+
+
+    <!-- Credit List -->
+
+    <section id="credit-list" style="padding: 40px; background-color: #e9e9e9;">
         <div id="credit-onscreen" class="credit-onscreen-container">
-            <ul class="credit-onscreen-list">
-                <h2 class="credit-list-title">Animated Television</h2>
-            
-                    <p class="credit-onscreen-item-p">
-                        The Simpsons
-                    </p>
-        
-                    <p class="credit-onscreen-item-p">
-                        Sophia the First
-                    </p>
-                    <p class="credit-onscreen-item-p">
-                        Superkitties
-                    </p>
-        
-                    <p class="credit-onscreen-item-p">
-                        Phineas and Ferb
-                    </p>
-                    <p class="credit-onscreen-item-p">
-                        Fish Hook
-                    </p>
-        
-                    <p class="credit-onscreen-item-p">
-                        Gravity Falls
-                    </p>
-                    <p class="credit-onscreen-item-p">
-                        Family Guy
-                    </p>
-        
-                    <p class="credit-onscreen-item-p">
-                        American Dad
-                    </p>
-                    <p class="credit-onscreen-item-p">
-                        The Proud Family
-                    </p>
-        
-                    <p class="credit-onscreen-item-p">
-                        Penn Zero
-                    </p>
-                    <p class="credit-onscreen-item-p">
-                        Milo Murphy's Law
-                    </p>
-        
-                    <p class="credit-onscreen-item-p">
-                        PB&J Otter
-                    </p>
-                    <p class="credit-onscreen-item-p">
-                        Teacher's Pet
-                    </p>
-        
-                    <p class="credit-onscreen-item-p">
-                        Kim Possible
-                    </p>
-                    <p class="credit-onscreen-item-p">
-                        South Park
-                    </p>
-        
-                    <p class="credit-onscreen-item-p">
-                        Bigger Longer and Uncut
-                    </p>
-                    <p class="credit-onscreen-item-p">
-                        MadTV
-                    </p>
-        
-                    <p class="credit-onscreen-item-p">
-                        King of the Hill
-                    </p>
-                    <p class="credit-onscreen-item-p">
-                        Hercules
-                    </p>
-        
-                    <p class="credit-onscreen-item-p">
-                        The Brave Little Toaster
-                    </p>
+            <h3 id="tv"><strong>TELEVISION:</strong></h3>
+            <ul class="list">
+                <li>Superkitties Theme Song 2023</li>
+                <li>Superkitties Call to Action Theme Song 2023</li>
+                <li>Americas Got Talent Contestant 2019</li>
+                <li>Good Morning America 2019 Super Bowl Llll</li>
+                <li>KTLA Morning News</li>
+                <li>Dancing with the Stars</li>
+                <li>The Talk (10:44 & 12:34)</li>
+                <li>The Oscars</li>
+                <li>The VMA Award's</li>
+                <li>Jimmy Kimmel Live (6:15)</li>
+                <li>Ellen</li>
+                <li>American Soul</li>
+                <li>American Idol</li>
+                <li>Code Black (2:07)</li>
+                <li>The Mayor</li>
+                <li>Smart Guy</li>
+                <li>The Odd Couple</li>
+                <li>90210 with Ne Yo</li>
+                <li>Glee</li>
+                <li>True Blood</li>
+                <li>Lost Angels</li>
+                <li>The Neighborhood (Vocal Contractor and Vocal Coach)</li>
+                <li>The King of Queens (1:20)</li>
+                <li>Family Matters</li>
+                <li>Moesha</li>
+                <li>Sister Sister</li>
+                <li>The Parker’s</li>
+                <li>Friends</li>
+                <li>The Singing Bee</li>
+                <li>The Arsenio Hall Show (:51)</li>
+                <li>Lopez Tonight</li>
+                <li>B.E.T on Jazz</li>
+                <li>Ally McBeal</li>
+                <li>Touched by an Angel</li>
+                <li>The Rocky Horror Show</li>
+                <li>Hanging with Mr. Cooper</li>
+                <li>Disney’s Champions on Ice (9:12 - 22:32)</li>
+                <li>Equal Justice</li>
+                <li>Strong Medicine</li>
+                <li>Chocolate News</li>
+                <li>Real Husbands of Hollywood</li>
+                <li>Girlfriend's</li>
+                <li>Any Day Now</li>
+                <li>Clash of the Choirs</li>
+                <li>Conan</li>
+                <li>Divas</li>
+                <li>Don Henley: Live Inside Job</li>
+                <li>Jag</li>
+                <li>Married with Children</li>
+                <li>Ned and Stacey</li>
+                <li>Silk Stockings</li>
+                <li>Boston Common</li>
+                <li>Boston Legal</li>
+                <li>Boston Public</li>
+                <li>Harry’s Law</li>
+                <li>The Parenthood</li>
+                <li>The Pentagon Wars</li>
+                <li>The Strip</li>
+                <li>Cop Rock</li>
+            </ul>
+
+            <hr>
+
+            <h3 id="animated-tv"><strong>ANIMATED TELEVISION:</strong></h3>
+            <ul class="list">
+                <li>The Simpson’s</li>
+                <li>Sophia the First</li>
+                <li>Superkitties</li>
+                <li>Phineas and Ferb</li>
+                <li>Fish Hooks</li>
+                <li>Gravity Falls</li>
+                <li>Family Guy</li>
+                <li>American Dad</li>
+                <li>The Proud Family</li>
+                <li>Penn Zero</li>
+                <li>Milo Murphy's Law</li>
+                <li>PB & J Otter</li>
+                <li>Teachers Pet</li>
+                <li>Kim Possible</li>
+                <li>South Park: Bigger Longer and Uncut</li>
+                <li>Mad TV</li>
+                <li>King of the Hill</li>
+                <li>Hercules</li>
+                <li>The Brave Little Toaster</li>
+            </ul>
+
+            <hr>
+
+            <h3 id="film"><strong>FILMS:</strong></h3>
+            <ul class="list">
+                <li>American Refugee</li>
+                <li>Bad Boys for Life (1:52)</li>
+                <li>Nutty Professor II: The Klumps (:45)</li>
+                <li>Dream Girls</li>
+                <li>Ray (Voice Regina King ;50)</li>
+                <li>Meet The Focker’s</li>
+                <li>Rock of Ages</li>
+                <li>Haunted Mansion</li>
+                <li>Big Mamma’s House</li>
+                <li>How Stella Got Her Groove Back</li>
+                <li>Boat Trip</li>
+                <li>Holmes and Watson (Voice of Lauren Lapkus 2:16)</li>
+                <li>The Preacher’s Wife</li>
+                <li>Tyler Perry’s The Family That Preys</li>
+                <li>Tyler Perry’s I Can Do Bad All by Myself</li>
+                <li>Almost Christmas</li>
+                <li>Ides of March</li>
+                <li>True Identity</li>
+                <li>Call of the Wild</li>
+                <li>Vampire in Brooklyn</li>
+                <li>Wag the Dog</li>
+                <li>Speed</li>
+                <li>Waiting to Exhale</li>
+                <li>Women in Red</li>
+                <li>A Civil Action</li>
+                <li>Amistad</li>
+                <li>Be Cool</li>
+                <li>Bring It On: Fight to the Finish</li>
+                <li>Calendar Girl</li>
+                <li>Coach Carter</li>
+                <li>Confession of an Alcoholic</li>
+                <li>Deja Vu</li>
+                <li>Ghosts of Mississippi</li>
+                <li>Glory Road</li>
+                <li>Godzilla</li>
+                <li>John Q</li>
+                <li>Jungle Fever</li>
+                <li>Marci X</li>
+                <li>Men of Honor</li>
+                <li>Mighty Joe Young</li>
+                <li>Play it to the Bone</li>
+                <li>Preachers Kid</li>
+                <li>Rent</li>
+                <li>Sarafina</li>
+                <li>Sweet Home Alabama</li>
+                <li>The Comebacks</li>
+                <li>The Forty Year Old Virgin</li>
+            </ul>
+
+            <hr>
+
+            <h3 id="animated-film"><strong>ANIMATED FILMS:</strong></h3>
+            <ul class="list">
+                <li>Lion King 2019</li>
+                <li>Toy Story 4</li>
+                <li>Guardians of the Galaxy 2</li>
+                <li>Lego Batman</li>
+                <li>Boss Baby</li>
+                <li>Lion King 1.5</li>
+                <li>The Lion King II: Simba’s Pride</li>
+                <li>Shrek</li>
+                <li>102 Dalmatians</li>
+                <li>A Bug’s Life</li>
+                <li>Flushed Away</li>
+                <li>The Prince of Egypt</li>
+                <li>Princess and the Frog</li>
+                <li>Cinderella II: Dreams Come True</li>
+                <li>The Road to El Dorado</li>
+                <li>Toy Story</li>
+                <li>Happy Feet</li>
+                <li>Hercules</li>
+                <li>Brother Bear</li>
+                <li>Madagascar II: Escape To Africa</li>
+                <li>Antz</li>
+                <li>Disney’s House of Mouse/Where’s Minnie?</li>
+                <li>An Extremely Goofy Movie Dance Party</li>
+                <li>James and the Giant Peach</li>
+                <li>Polar Express</li>
+                <li>The Brave Little Toaster Goes to Mars</li>
+            </ul>
+
+            <hr>
+
+            <h3 id="commercials"><strong>COMMERCIALS & THEME PARKS:</strong></h3>
+            <ul class="list">
+                <li>Disneyland Parades (Florida)</li>
+                <li>American Idol</li>
+                <li>State Farm</li>
+                <li>T-Mobil</li>
+                <li>Toyota</li>
+                <li>Sonic</li>
+                <li>Visa</li>
+                <li>Burger King</li>
+                <li>Coca Cola</li>
+                <li>Mountain Dew</li>
+                <li>McDonald’s</li>
+                <li>Jack in the Box</li>
+                <li>KFC</li>
+                <li>Michelob</li>
+                <li>Carrabba’s Restaurant</li>
+                <li>Glade</li>
+                <li>Kmart</li>
+                <li>Mazda</li>
+                <li>Priceline</li>
+                <li>Reebok</li>
+                <li>Spectracide Fire Ant Killer</li>
+                <li>Barbie</li>
+                <li>Alltel</li>
+            </ul>
+
+            <hr>
+
+            <h3 id="tributes"><strong>TRIBUTES:</strong></h3>
+            <ul class="list">
+                <li>Oscars With Cynthia Erivo 2019</li>
+                <li>Oscars with John Legend and Common 2015</li>
+                <li>Frank Sinatra’s 80th Anniversary</li>
+                <li>Music Cares Tribute to Aretha Franklin and The Quincy Jones 50th Anniversary Celebration (13:08)
+                </li>
+                <li>A Tribute to Elizabeth Taylor</li>
+            </ul>
+
+            <hr>
+
+            <h3 id="artist"><strong>ARTIST WORKED WITH:</strong></h3>
+            <ul class="list">
+                <li>Trey Songz</li>
+                <li>Juicy J</li>
+                <li>Gabrielle Union</li>
+                <li>Justin Timberlake</li>
+                <li>Harry Styles</li>
+                <li>30 seconds to Mars</li>
+                <li>Elton John</li>
+                <li>Whitney Houston</li>
+                <li>Adele</li>
+                <li>Michael Buble</li>
+                <li>John Legend</li>
+                <li>Ne-Yo</li>
+                <li>Mary J Blige</li>
+                <li>Katy Perry</li>
+                <li>Common</li>
+                <li>Aloe Blacc</li>
+                <li>My Chemical Romance</li>
+                <li>Florence and the Machine</li>
+                <li>Nelly Furtado</li>
+                <li>David Archuleta</li>
+                <li>Kimberly Locke</li>
+                <li>Celine Dion</li>
+                <li>Chaka Khan</li>
+                <li>Barbara Streisand</li>
+                <li>Randy Newman</li>
+                <li>Ray Charles</li>
+                <li>Dionne Warwick</li>
+                <li>Don Henley</li>
+                <li>Diana Ross</li>
+                <li>Smokey Robinson</li>
+                <li>John Tesh</li>
+                <li>Lionel Richie</li>
+                <li>Patti LaBelle</li>
+                <li>Maroon 5</li>
+                <li>Travis Scott</li>
+                <li>Patti Austin</li>
+                <li>Be Be & Ce Ce Winans</li>
+                <li>Ann Hampton Calloway</li>
+                <li>Anthony Hamilton</li>
+                <li>Bobby Lyle</li>
+                <li>Brandy</li>
+                <li>Chante Moore (:51)</li>
+                <li>Raven Simone</li>
+                <li>Big Boi of Outkast</li>
+                <li>Sleppy Brown</li>
+                <li>Dana Glover</li>
+                <li>David Foster</li>
+                <li>Diego</li>
+                <li>Don</li>
+                <li>Erich Kunzel</li>
+                <li>Gates Mcfadden</li>
+                <li>George Howard</li>
+                <li>Gloria Estefan</li>
+                <li>Good Charlotte</li>
+                <li>Hank Ballard</li>
+                <li>Hap Palmer</li>
+                <li>Hiroshima</li>
+                <li>Joshua Kadison</li>
+                <li>Julian Lennon</li>
+                <li>Karen White</li>
+                <li>Kuh Ledesma</li>
+                <li>Ledisi</li>
+                <li>Lil Momma</li>
+                <li>Luis Angel</li>
+                <li>Mark Isham</li>
+                <li>Meat Loaf</li>
+                <li>Michael English</li>
+                <li>Mig Ayesa</li>
+                <li>Patti Labelle</li>
+                <li>Paul Rodgers</li>
+                <li>Peabo Bryson</li>
+                <li>Penny Ford</li>
+                <li>Praise and Worship</li>
+                <li>Queen Latifah</li>
+                <li>Shelby Lynne</li>
+                <li>Spagna</li>
+                <li>Steel Pulse</li>
+                <li>Steve Perry</li>
+                <li>Terri Ann Linn</li>
+                <li>The Chipmunks</li>
+                <li>The Whispers</li>
+                <li>TLC</li>
+                <li>Toni Basil</li>
+                <li>Tramaine Hawkins</li>
+                <li>Uncle Kracker</li>
+                <li>Village People</li>
+                <li>Vonda Shepard</li>
+                <li>Aaron Nevel</li>
+            </ul>
+
+            <hr>
+            <h3 id="singles"><strong>SINGLES:</strong></h3>
+            <ul class="list">
+                <li>Always</li>
+                <li>Irresistible</li>
             </ul>
         </div>
-    </section> -->
+    </section>
 
 </body>
 

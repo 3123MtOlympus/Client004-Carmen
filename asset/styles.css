@@ -2,12 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
-
-/* Navbar */
-
 nav {
-    background-color: #83309a;
+    background-color: #83309a;;
     padding: 10px;
 }
 nav ul {
@@ -20,7 +18,7 @@ nav ul {
 nav ul li {
     display: inline;
 }
-nav ul li a {
+nav ul a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -29,7 +27,6 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #575757;
 }
-
 /* Carousel */
 
 .carousel-container {
@@ -43,7 +40,7 @@ nav ul li a:hover {
     height: 8px; /* Scrollbar height */
 }
 .carousel-container::-webkit-scrollbar-thumb {
-    background-color: #b1afb15a; /* Scrollbar color */
+    background-color: #a7a5a7; /* Scrollbar color */
     border-radius: 10px; /* Scrollbar rounded edges */
 }
 .carousel-container::-webkit-scrollbar-track {
@@ -62,14 +59,14 @@ nav ul li a:hover {
 /* Image */
 
 .image-card {
-    width: 200px;
-    height: 120px;
-    background-color: #ccc;
+    width: 300px;
+    height: 110px;
+    background-color: #737373ae;
 }
 
 .img {
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .img:hover {
@@ -80,8 +77,8 @@ nav ul li a:hover {
 
 .video-card {
     margin-bottom: 10px;
-    width: 600px;
-    height: 320px;
+    width: 500px;
+    height: 280px;
 }
 
 .vid {
@@ -90,6 +87,7 @@ nav ul li a:hover {
 
 .vid:hover{
     cursor: pointer;
+    box-shadow: 30px 30px 15px red;
 
 }
 
@@ -132,4 +130,24 @@ nav ul li a:hover {
 }
 .imdb-button:hover {
     background-color: #e5b917; /* Darker yellow on hover */
+}
+
+.list {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap to the next line */
+}
+
+li {
+    flex: 1 1 25%; /* Makes each item take up 25% of the container's width */
+    box-sizing: border-box; /* Ensures padding and borders are included in the width/height */
+    padding: 0px; /* Adds some padding between items */
+    font-size: small;
+}
+
+strong {
+    flex-basis: 100%; /* Makes the category headers take up the full width */
+    width: 100%;
 }
