@@ -1,13 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
+
 nav {
-    background-color: #83309a;;
+    background-color: #83309a;
+    ;
     padding: 10px;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -15,37 +18,51 @@ nav ul {
     display: flex;
     justify-content: space-around;
 }
+
 nav ul li {
     display: inline;
 }
+
 nav ul a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
 }
+
 nav ul li a:hover {
     background-color: #575757;
 }
+
 /* Carousel */
 
 .carousel-container {
     display: flex;
-    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on touch devices */
+    -webkit-overflow-scrolling: touch;
+    /* Enables smooth scrolling on touch devices */
     padding: 20px 0;
 }
+
 .carousel-container::-webkit-scrollbar {
-    height: 8px; /* Scrollbar height */
+    height: 8px;
+    /* Scrollbar height */
 }
+
 .carousel-container::-webkit-scrollbar-thumb {
-    background-color: #a7a5a7; /* Scrollbar color */
-    border-radius: 10px; /* Scrollbar rounded edges */
+    background-color: #a7a5a7;
+    /* Scrollbar color */
+    border-radius: 10px;
+    /* Scrollbar rounded edges */
 }
+
 .carousel-container::-webkit-scrollbar-track {
-    background-color: #f4f4f4; /* Scrollbar track color */
+    background-color: #f4f4f4;
+    /* Scrollbar track color */
 }
+
 .carousel-item {
     scroll-snap-align: start;
     flex: none;
@@ -56,6 +73,7 @@ nav ul li a:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     position: relative;
 }
+
 /* Image */
 
 .image-card {
@@ -85,13 +103,13 @@ nav ul li a:hover {
     width: 100%;
 }
 
-.vid:hover{
+.vid:hover {
     cursor: pointer;
     box-shadow: 30px 30px 15px red;
 
 }
 
-.hr{
+.hr {
     margin: 0 auto;
     width: 100%;
     background-color: #83309a;
@@ -99,7 +117,7 @@ nav ul li a:hover {
 
 }
 
-.credit-title{
+.credit-title {
     font-family: "Qwitcher Grypen", cursive;
     font-size: 30px;
     padding: 0;
@@ -107,10 +125,13 @@ nav ul li a:hover {
     color: #83309a;
 
 }
+
 .gradient-divider {
-    height: 100px; /* Adjust the height as needed */
+    height: 100px;
+    /* Adjust the height as needed */
     background: linear-gradient(to top, #83309a, #c6c5c5);
-    margin: 20px 0; /* Adjust the margin as needed */
+    margin: 20px 0;
+    /* Adjust the margin as needed */
 }
 
 .imdb-button-container {
@@ -120,34 +141,121 @@ nav ul li a:hover {
 .imdb-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #f5c518; /* IMDb yellow */
-    color: #000; /* Black text */
+    background-color: #f5c518;
+    /* IMDb yellow */
+    color: #000;
+    /* Black text */
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+
 .imdb-button:hover {
-    background-color: #e5b917; /* Darker yellow on hover */
+    background-color: #e5b917;
+    /* Darker yellow on hover */
 }
 
 .list {
-    list-style-type: none; /* Removes bullet points */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
+    list-style-type: none;
+    /* Removes bullet points */
+    padding: 0;
+    /* Removes default padding */
+    margin: 0;
+    /* Removes default margin */
     display: flex;
-    flex-wrap: wrap; /* Allows the items to wrap to the next line */
+    flex-wrap: wrap;
+    /* Allows the items to wrap to the next line */
 }
 
 li {
-    flex: 1 1 25%; /* Makes each item take up 25% of the container's width */
-    box-sizing: border-box; /* Ensures padding and borders are included in the width/height */
-    padding: 0px; /* Adds some padding between items */
+    flex: 1 1 25%;
+    /* Makes each item take up 25% of the container's width */
+    box-sizing: border-box;
+    /* Ensures padding and borders are included in the width/height */
+    padding: 0px;
+    /* Adds some padding between items */
     font-size: small;
 }
 
 strong {
-    flex-basis: 100%; /* Makes the category headers take up the full width */
+    flex-basis: 100%;
+    /* Makes the category headers take up the full width */
     width: 100%;
+}
+
+.subscription-section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-section h2 {
+    color: #83309a;
+    text-align: center;
+}
+
+.subscription-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-section label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.subscription-section input[type="text"],
+.subscription-section input[type="email"],
+.subscription-section input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscription-section input[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: #83309a;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscription-section input[type="submit"]:hover {
+    background-color: #722a89;
+}
+
+/* HOME PAGE */
+
+.home-bg {
+    background-color: #7b448d7f;
+
+}
+
+/* Bio page */
+main {
+    margin: 50px;
+    padding: 43px;
+}
+.bio-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 85px;
+    background-color: #57575749;
+    box-shadow: 0 0 15px;
+    border-radius: 5px;
+}
+
+.bio-header-image {
+    width: 100px;
+    height: 100px;
+
+    box-shadow: 3px 3px 45px rgba(221, 0, 255, 0.357);
 }
