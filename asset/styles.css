@@ -185,6 +185,7 @@ strong {
     width: 100%;
 }
 
+/* Subscription Style */
 .subscription-section {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -234,17 +235,94 @@ strong {
 
 /* HOME PAGE */
 
-.home-bg, .bio-bg {
+.home-bg,
+.bio-bg {
     background-color: #7b448d7f;
 
-
 }
+
+.home-title {
+    text-align: center;
+    font-family: cursive;
+}
+
+.home-carousel {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    /* Ensure all images are in a single line */
+}
+
+.home-carousel-container {
+    display: inline-block;
+    animation: scrollReverse 90s linear infinite;
+}
+
+.home-carousel-container img {
+    width: 500px;
+    /* Adjust width as needed */
+    margin-right: 10px;
+    /* Space between images */
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px;
+}
+
+.home-carousel-brand {
+    overflow: hidden;
+    white-space: nowrap;
+    /* Ensure the content doesn't wrap */
+}
+
+.home-carousel-brand-container {
+    display: inline-block;
+    animation: scroll 60s linear infinite;
+}
+
+.home-carousel-brand-list {
+    display: inline-flex;
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.home-carousel-brand-list-item {
+    margin-right: 20px;
+    /* Space between items */
+    white-space: nowrap;
+    /* Prevent individual items from wrapping */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrollReverse {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
 
 /* Bio page */
 main {
     margin: 80px;
-    
+
 }
+
 .bio-container {
     width: 80%;
     margin: 0 auto;
@@ -254,7 +332,7 @@ main {
     border-radius: 5px;
 }
 
-.bio-image{
+.bio-image {
     width: 40%;
     border-radius: 50%;
     box-shadow: 3px 3px 15px;
@@ -266,22 +344,27 @@ main {
 .image-container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Center vertically as well */
-    height: 45vh; /* Optional: Adjust height as needed */
+    align-items: center;
+    /* Center vertically as well */
+    height: 45vh;
+    /* Optional: Adjust height as needed */
 }
 
 #header-image {
-    max-width: 100%; /* Optional: Makes sure the image is responsive */
+    max-width: 100%;
+    /* Optional: Makes sure the image is responsive */
 }
 
 .bio-header-image {
     width: 100px;
     height: 100px;
-margin: 0px 50px;
+    margin: 0px 50px;
     box-shadow: 3px 3px 45px rgba(221, 0, 255, 0.357);
 }
+
 .bio-p {
-    border: 2px solid aliceblue; border-radius: 5px;
+    border: 2px solid aliceblue;
+    border-radius: 5px;
     padding: 25px;
 }
 
@@ -289,14 +372,13 @@ margin: 0px 50px;
     margin: 10px 50px;
 }
 
-.bio-title{
+.bio-title {
     text-align: center;
     font-size: 70px;
     padding: 0;
     margin: 0;
 }
 
-p{
+p {
     text-align: justify;
 }
-
