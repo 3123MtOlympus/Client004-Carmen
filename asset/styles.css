@@ -241,6 +241,12 @@ strong {
 
 }
 
+.home-credit-link {
+    text-align: center;
+    padding: 10px;
+
+}
+
 .home-title {
     text-align: center;
     font-family: cursive;
@@ -250,70 +256,42 @@ strong {
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
+    
     /* Ensure all images are in a single line */
+    box-shadow: 3px 3px 15px aliceblue;
+    padding: 8px;
+    background-color: #0000004e;
 }
 
 .home-carousel-container {
     display: inline-block;
-    animation: scrollReverse 90s linear infinite;
+    animation: moveRight 80s linear infinite;
 }
 
 .home-carousel-container img {
-    width: 500px;
+    width: 200px;
     /* Adjust width as needed */
     margin-right: 10px;
     /* Space between images */
-    height: 350px;
+    height: 100px;
     flex-shrink: 0;
     border-radius: 5px;
     box-shadow: 3px 3px 15px;
 }
 
-.home-carousel-brand {
-    overflow: hidden;
-    white-space: nowrap;
-    /* Ensure the content doesn't wrap */
-}
-
-.home-carousel-brand-container {
-    display: inline-block;
-    animation: scroll 60s linear infinite;
-}
-
-.home-carousel-brand-list {
-    display: inline-flex;
-    list-style-type: none;
-    /* Remove bullet points */
-    padding: 0;
-    margin: 0;
-}
-
-.home-carousel-brand-list-item {
-    margin-right: 20px;
-    /* Space between items */
-    white-space: nowrap;
-    /* Prevent individual items from wrapping */
-}
-
-@keyframes scroll {
+@keyframes moveRight {
     0% {
-        transform: translateX(100%);
+      transform: translateX(-100%);
     }
-
     100% {
-        transform: translateX(-100%);
+      transform: translateX(100%);
     }
-}
-
-@keyframes scrollReverse {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(100%);
-    }
-}
+  }
+  
+  .continuous-scroll {
+    animation: moveRight 10s linear infinite;
+  }
+  
 
 
 
